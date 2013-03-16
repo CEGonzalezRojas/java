@@ -4,6 +4,9 @@
  */
 package javaapplication3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author cegonzal
@@ -15,7 +18,12 @@ public class JavaApplication3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int alpha = 1;
-        System.out.print(alpha);
+        List<Integer> lst = new ArrayList<Integer>();
+        for(int i = 0; i < 10; i++){
+            lst.add(i);
+        }
+        for(int i = 0; i < lst.size(); i++){
+            System.out.println(lst.get(i));
+        }
     }
 }
